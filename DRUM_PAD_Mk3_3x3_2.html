@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>DRUM PAD Mk3 3x3</title>
+    <link rel="stylesheet" type="text/css" href="DRUM_PAD_Mk3_3x3_2.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="DRUM_PAD_Mk3_3x3_2.js"></script>
+  </head>
+  <body>
+    <div id="load">loading...</div>
+    <input type="button" value="rearrange" id="rearrange">
+    <div class="pads">
+      <div id="pad1"></div>
+      <div id="pad2"></div>
+      <div id="pad3"></div>
+      <div id="pad4"></div>
+      <div id="pad5"></div>
+      <div id="pad6"></div>
+      <div id="pad7"></div>
+      <div id="pad8"></div>
+      <div id="pad9"></div>
+    </div>
+    <div class="music">
+      <audio id="Kick" preload="auto">
+        <source src="Kick.wav" type="audio/wav">
+      </audio>
+      <audio id="Snare" preload="auto">
+        <source src="Snare.wav" type="audio/wav">
+      </audio>
+      <audio id="CrossStick" preload="auto">
+        <source src="CrossStick.wav" type="audio/wav">
+      </audio>
+      <audio id="SnareOpen" preload="auto">
+        <source src="SnareOpen.wav" type="audio/wav">
+      </audio>
+      <audio id="SnareGost" preload="auto">
+        <source src="SnareGost.wav" type="audio/wav">
+      </audio>
+      <audio id="HHF" preload="auto">
+        <source src="HHF.wav" type="audio/wav">
+      </audio>
+      <audio id="HHC" preload="auto">
+        <source src="HHC.wav" type="audio/wav">
+      </audio>
+      <audio id="HHO" preload="auto">
+        <source src="HHO.wav" type="audio/wav">
+      </audio>
+      <audio id="Cowbell" preload="auto">
+        <source src="Cowbell.wav" type="audio/wav">
+      </audio>
+      <audio id="Crash3" preload="auto">
+        <source src="Crash3.wav" type="audio/wav">
+      </audio>
+      <audio id="Tom1" preload="auto">
+        <source src="Tom1.wav" type="audio/wav">
+      </audio>
+      <audio id="Tom2" preload="auto">
+        <source src="Tom2.wav" type="audio/wav">
+      </audio>
+      <audio id="Crash1" preload="auto">
+        <source src="Crash1.wav" type="audio/wav">
+      </audio>
+      <audio id="Crash2" preload="auto">
+        <source src="Crash2.wav" type="audio/wav">
+      </audio>
+      <audio id="RideBell" preload="auto">
+        <source src="RideBell.wav" type="audio/wav">
+      </audio>
+      <audio id="RideEdge" preload="auto">
+        <source src="RideEdge.wav" type="audio/wav">
+      </audio>
+      <audio id="Snap" preload="auto">
+        <source src="Snap.wav" type="audio/wav">
+      </audio>
+      <audio id="Claps" preload="auto">
+        <source src="Claps.wav" type="audio/wav">
+      </audio>
+      <audio id="SFX" preload="auto">
+        <source src="SFX.wav" type="audio/wav">
+      </audio>
+      <audio id="CymbalFX" preload="auto">
+        <source src="CymbalFX.wav" type="audio/wav">
+      </audio>
+      <audio id="Fx2" preload="auto">
+        <source src="Fx2.wav" type="audio/wav">
+      </audio>
+      <audio id="C0" preload="auto">
+        <source src="Piano/C0.wav" type="audio/wav">
+      </audio>
+      <audio id="Cs0" preload="auto">
+        <source src="Piano/Cs0.wav" type="audio/wav">
+      </audio>
+      <audio id="D0" preload="auto">
+        <source src="Piano/D0.wav" type="audio/wav">
+      </audio>
+      <audio id="Ds0" preload="auto">
+        <source src="Piano/Ds0.wav" type="audio/wav">
+      </audio>
+      <audio id="E0" preload="auto">
+        <source src="Piano/E0.wav" type="audio/wav">
+      </audio>
+      <audio id="F0" preload="auto">
+        <source src="Piano/F0.wav" type="audio/wav">
+      </audio>
+      <audio id="Fs0" preload="auto">
+        <source src="Piano/Fs0.wav" type="audio/wav">
+      </audio>
+      <audio id="G0" preload="auto">
+        <source src="Piano/G0.wav" type="audio/wav">
+      </audio>
+      <audio id="Gs0" preload="auto">
+        <source src="Piano/Gs0.wav" type="audio/wav">
+      </audio>
+      <audio id="A0" preload="auto">
+        <source src="Piano/A0.wav" type="audio/wav">
+      </audio>
+      <audio id="As0" preload="auto">
+        <source src="Piano/As0.wav" type="audio/wav">
+      </audio>
+      <audio id="B0" preload="auto">
+        <source src="Piano/B0.wav" type="audio/wav">
+      </audio>
+      <audio id="C1" preload="auto">
+        <source src="Piano/C1.wav" type="audio/wav">
+      </audio>
+      <audio id="Cs1" preload="auto">
+        <source src="Piano/Cs1.wav" type="audio/wav">
+      </audio>
+      <audio id="D1" preload="auto">
+        <source src="Piano/D1.wav" type="audio/wav">
+      </audio>
+      <audio id="Ds1" preload="auto">
+        <source src="Piano/Ds1.wav" type="audio/wav">
+      </audio>
+      <audio id="E1" preload="auto">
+        <source src="Piano/E1.wav" type="audio/wav">
+      </audio>
+      <audio id="F1" preload="auto">
+        <source src="Piano/F1.wav" type="audio/wav">
+      </audio>
+      <audio id="Fs1" preload="auto">
+        <source src="Piano/Fs1.wav" type="audio/wav">
+      </audio>
+      <audio id="G1" preload="auto">
+        <source src="Piano/G1.wav" type="audio/wav">
+      </audio>
+      <audio id="Gs1" preload="auto">
+        <source src="Piano/Gs1.wav" type="audio/wav">
+      </audio>
+      <audio id="A1" preload="auto">
+        <source src="Piano/A1.wav" type="audio/wav">
+      </audio>
+      <audio id="As1" preload="auto">
+        <source src="Piano/As1.wav" type="audio/wav">
+      </audio>
+      <audio id="B1" preload="auto">
+        <source src="Piano/B1.wav" type="audio/wav">
+      </audio>
+      <audio id="C2" preload="auto">
+        <source src="Piano/C2.wav" type="audio/wav">
+      </audio>
+      <audio id="Cs2" preload="auto">
+        <source src="Piano/Cs2.wav" type="audio/wav">
+      </audio>
+      <audio id="D2" preload="auto">
+        <source src="Piano/D2.wav" type="audio/wav">
+      </audio>
+      <audio id="Ds2" preload="auto">
+        <source src="Piano/Ds2.wav" type="audio/wav">
+      </audio>
+      <audio id="E2" preload="auto">
+        <source src="Piano/E2.wav" type="audio/wav">
+      </audio>
+      <audio id="F2" preload="auto">
+        <source src="Piano/F2.wav" type="audio/wav">
+      </audio>
+      <audio id="Fs2" preload="auto">
+        <source src="Piano/Fs2.wav" type="audio/wav">
+      </audio>
+      <audio id="G2" preload="auto">
+        <source src="Piano/G2.wav" type="audio/wav">
+      </audio>
+      <audio id="Gs2" preload="auto">
+        <source src="Piano/Gs2.wav" type="audio/wav">
+      </audio>
+      <audio id="A2" preload="auto">
+        <source src="Piano/A2.wav" type="audio/wav">
+      </audio>
+      <audio id="As2" preload="auto">
+        <source src="Piano/As2.wav" type="audio/wav">
+      </audio>
+      <audio id="B2" preload="auto">
+        <source src="Piano/B2.wav" type="audio/wav">
+      </audio>
+      <audio id="C3" preload="auto">
+        <source src="Piano/C3.wav" type="audio/wav">
+      </audio>
+      <audio id="Cs3" preload="auto">
+        <source src="Piano/Cs3.wav" type="audio/wav">
+      </audio>
+      <audio id="D3" preload="auto">
+        <source src="Piano/D3.wav" type="audio/wav">
+      </audio>
+      <audio id="Ds3" preload="auto">
+        <source src="Piano/Ds3.wav" type="audio/wav">
+      </audio>
+      <audio id="E3" preload="auto">
+        <source src="Piano/E3.wav" type="audio/wav">
+      </audio>
+      <audio id="F3" preload="auto">
+        <source src="Piano/F3.wav" type="audio/wav">
+      </audio>
+      <audio id="Fs3" preload="auto">
+        <source src="Piano/Fs3.wav" type="audio/wav">
+      </audio>
+      <audio id="G3" preload="auto">
+        <source src="Piano/G3.wav" type="audio/wav">
+      </audio>
+      <audio id="Gs3" preload="auto">
+        <source src="Piano/Gs3.wav" type="audio/wav">
+      </audio>
+      <audio id="A3" preload="auto">
+        <source src="Piano/A3.wav" type="audio/wav">
+      </audio>
+      <audio id="As3" preload="auto">
+        <source src="Piano/As3.wav" type="audio/wav">
+      </audio>
+      <audio id="B3" preload="auto">
+        <source src="Piano/B3.wav" type="audio/wav">
+      </audio>
+      <audio id="C4" preload="auto">
+        <source src="Piano/C4.wav" type="audio/wav">
+      </audio>
+      <audio id="Cs4" preload="auto">
+        <source src="Piano/Cs4.wav" type="audio/wav">
+      </audio>
+      <audio id="D4" preload="auto">
+        <source src="Piano/D4.wav" type="audio/wav">
+      </audio>
+      <audio id="Ds4" preload="auto">
+        <source src="Piano/Ds4.wav" type="audio/wav">
+      </audio>
+      <audio id="E4" preload="auto">
+        <source src="Piano/E4.wav" type="audio/wav">
+      </audio>
+      <audio id="F4" preload="auto">
+        <source src="Piano/F4.wav" type="audio/wav">
+      </audio>
+      <audio id="Fs4" preload="auto">
+        <source src="Piano/Fs4.wav" type="audio/wav">
+      </audio>
+      <audio id="G4" preload="auto">
+        <source src="Piano/G4.wav" type="audio/wav">
+      </audio>
+      <audio id="Gs4" preload="auto">
+        <source src="Piano/Gs4.wav" type="audio/wav">
+      </audio>
+      <audio id="A4" preload="auto">
+        <source src="Piano/A4.wav" type="audio/wav">
+      </audio>
+      <audio id="As4" preload="auto">
+        <source src="Piano/As4.wav" type="audio/wav">
+      </audio>
+      <audio id="B4" preload="auto">
+        <source src="Piano/B4.wav" type="audio/wav">
+      </audio>
+      <audio id="C5" preload="auto">
+        <source src="Piano/C5.wav" type="audio/wav">
+      </audio>
+      <audio id="Cs5" preload="auto">
+        <source src="Piano/Cs5.wav" type="audio/wav">
+      </audio>
+      <audio id="D5" preload="auto">
+        <source src="Piano/D5.wav" type="audio/wav">
+      </audio>
+      <audio id="Ds5" preload="auto">
+        <source src="Piano/Ds5.wav" type="audio/wav">
+      </audio>
+      <audio id="E5" preload="auto">
+        <source src="Piano/E5.wav" type="audio/wav">
+      </audio>
+      <audio id="F5" preload="auto">
+        <source src="Piano/F5.wav" type="audio/wav">
+      </audio>
+      <audio id="Fs5" preload="auto">
+        <source src="Piano/Fs5.wav" type="audio/wav">
+      </audio>
+      <audio id="G5" preload="auto">
+        <source src="Piano/G5.wav" type="audio/wav">
+      </audio>
+      <audio id="Gs5" preload="auto">
+        <source src="Piano/Gs5.wav" type="audio/wav">
+      </audio>
+      <audio id="A5" preload="auto">
+        <source src="Piano/A5.wav" type="audio/wav">
+      </audio>
+      <audio id="As5" preload="auto">
+        <source src="Piano/As5.wav" type="audio/wav">
+      </audio>
+      <audio id="B5" preload="auto">
+        <source src="Piano/B5.wav" type="audio/wav">
+      </audio>
+      <audio id="C6" preload="auto">
+        <source src="Piano/C6.wav" type="audio/wav">
+      </audio>
+      <audio id="Cs6" preload="auto">
+        <source src="Piano/Cs6.wav" type="audio/wav">
+      </audio>
+      <audio id="D6" preload="auto">
+        <source src="Piano/D6.wav" type="audio/wav">
+      </audio>
+      <audio id="Ds6" preload="auto">
+        <source src="Piano/Ds6.wav" type="audio/wav">
+      </audio>
+      <audio id="E6" preload="auto">
+        <source src="Piano/E6.wav" type="audio/wav">
+      </audio>
+      <audio id="F6" preload="auto">
+        <source src="Piano/F6.wav" type="audio/wav">
+      </audio>
+      <audio id="Fs6" preload="auto">
+        <source src="Piano/Fs6.wav" type="audio/wav">
+      </audio>
+      <audio id="G6" preload="auto">
+        <source src="Piano/G6.wav" type="audio/wav">
+      </audio>
+      <audio id="Gs6" preload="auto">
+        <source src="Piano/Gs6.wav" type="audio/wav">
+      </audio>
+      <audio id="A6" preload="auto">
+        <source src="Piano/A6.wav" type="audio/wav">
+      </audio>
+      <audio id="As6" preload="auto">
+        <source src="Piano/As6.wav" type="audio/wav">
+      </audio>
+      <audio id="B6" preload="auto">
+        <source src="Piano/B6.wav" type="audio/wav">
+      </audio>
+      <audio id="C7" preload="auto">
+        <source src="Piano/C7.wav" type="audio/wav">
+      </audio>
+      <audio id="bC1" preload="auto">
+        <source src="Bass/bC1.wav" type="audio/wav">
+      </audio>
+      <audio id="bCs1" preload="auto">
+        <source src="Bass/bCs1.wav" type="audio/wav">
+      </audio>
+      <audio id="bD1" preload="auto">
+        <source src="Bass/bD1.wav" type="audio/wav">
+      </audio>
+      <audio id="bDs1" preload="auto">
+        <source src="Bass/bDs1.wav" type="audio/wav">
+      </audio>
+      <audio id="bE1" preload="auto">
+        <source src="Bass/bE1.wav" type="audio/wav">
+      </audio>
+      <audio id="bF1" preload="auto">
+        <source src="Bass/bF1.wav" type="audio/wav">
+      </audio>
+      <audio id="bFs1" preload="auto">
+        <source src="Bass/bFs1.wav" type="audio/wav">
+      </audio>
+      <audio id="bG1" preload="auto">
+        <source src="Bass/bG1.wav" type="audio/wav">
+      </audio>
+      <audio id="bGs1" preload="auto">
+        <source src="Bass/bGs1.wav" type="audio/wav">
+      </audio>
+      <audio id="bA1" preload="auto">
+        <source src="Bass/bA1.wav" type="audio/wav">
+      </audio>
+      <audio id="bAs1" preload="auto">
+        <source src="Bass/bAs1.wav" type="audio/wav">
+      </audio>
+      <audio id="bB1" preload="auto">
+        <source src="Bass/bB1.wav" type="audio/wav">
+      </audio>
+      <audio id="bC2" preload="auto">
+        <source src="Bass/bC2.wav" type="audio/wav">
+      </audio>
+      <audio id="bCs2" preload="auto">
+        <source src="Bass/bCs2.wav" type="audio/wav">
+      </audio>
+      <audio id="bD2" preload="auto">
+        <source src="Bass/bD2.wav" type="audio/wav">
+      </audio>
+      <audio id="bDs2" preload="auto">
+        <source src="Bass/bDs2.wav" type="audio/wav">
+      </audio>
+      <audio id="bE2" preload="auto">
+        <source src="Bass/bE2.wav" type="audio/wav">
+      </audio>
+      <audio id="bF2" preload="auto">
+        <source src="Bass/bF2.wav" type="audio/wav">
+      </audio>
+      <audio id="bFs2" preload="auto">
+        <source src="Bass/bFs2.wav" type="audio/wav">
+      </audio>
+      <audio id="bG2" preload="auto">
+        <source src="Bass/bG2.wav" type="audio/wav">
+      </audio>
+      <audio id="bGs2" preload="auto">
+        <source src="Bass/bGs2.wav" type="audio/wav">
+      </audio>
+      <audio id="bA2" preload="auto">
+        <source src="Bass/bA2.wav" type="audio/wav">
+      </audio>
+      <audio id="bAs2" preload="auto">
+        <source src="Bass/bAs2.wav" type="audio/wav">
+      </audio>
+      <audio id="bB2" preload="auto">
+        <source src="Bass/bB2.wav" type="audio/wav">
+      </audio>
+      <audio id="bC3" preload="auto">
+        <source src="Bass/bC3.wav" type="audio/wav">
+      </audio>
+      <audio id="bCs3" preload="auto">
+        <source src="Bass/bCs3.wav" type="audio/wav">
+      </audio>
+      <audio id="bD3" preload="auto">
+        <source src="Bass/bD3.wav" type="audio/wav">
+      </audio>
+      <audio id="bDs3" preload="auto">
+        <source src="Bass/bDs3.wav" type="audio/wav">
+      </audio>
+      <audio id="bE3" preload="auto">
+        <source src="Bass/bE3.wav" type="audio/wav">
+      </audio>
+      <audio id="bF3" preload="auto">
+        <source src="Bass/bF3.wav" type="audio/wav">
+      </audio>
+      <audio id="bFs3" preload="auto">
+        <source src="Bass/bFs3.wav" type="audio/wav">
+      </audio>
+      <audio id="bG3" preload="auto">
+        <source src="Bass/bG3.wav" type="audio/wav">
+      </audio>
+      <audio id="bGs3" preload="auto">
+        <source src="Bass/bGs3.wav" type="audio/wav">
+      </audio>
+      <audio id="bA3" preload="auto">
+        <source src="Bass/bA3.wav" type="audio/wav">
+      </audio>
+      <audio id="bAs3" preload="auto">
+        <source src="Bass/bAs3.wav" type="audio/wav">
+      </audio>
+      <audio id="bB3" preload="auto">
+        <source src="Bass/bB3.wav" type="audio/wav">
+      </audio>
+      <audio id="bC4" preload="auto">
+        <source src="Bass/bC4.wav" type="audio/wav">
+      </audio>
+      <audio id="bCs4" preload="auto">
+        <source src="Bass/bCs4.wav" type="audio/wav">
+      </audio>
+      <audio id="bD4" preload="auto">
+        <source src="Bass/bD4.wav" type="audio/wav">
+      </audio>
+      <audio id="bDs4" preload="auto">
+        <source src="Bass/bDs4.wav" type="audio/wav">
+      </audio>
+      <audio id="bE4" preload="auto">
+        <source src="Bass/bE4.wav" type="audio/wav">
+      </audio>
+    </div>
+    <div id="blackout">BLACKOUT!</div>
+    <div id="message">NEW INSTRUMENTS ADDED!</div>
+    <div id="bass">DRUMS AND BASS MODE!</div>
+    <div id="allPiano">ALL PIANO MODE!</div>
+    <div id="default">DRUMS AND PIANO MODE!</div>
+    <div class="mesC">
+      <div id="mesC0">KEY "Z" HAS BEEN SET TO "C0"</div>
+      <div id="mesC1">KEY "Z" HAS BEEN SET TO "C1"</div>
+      <div id="mesC2">KEY "Z" HAS BEEN SET TO "C2"</div>
+      <div id="mesC3">KEY "Z" HAS BEEN SET TO "C3"</div>
+      <div id="mesC4">KEY "Z" HAS BEEN SET TO "C4"</div>
+      <div id="mesC5">KEY "Z" HAS BEEN SET TO "C5"</div>
+      <div id="mesC6">KEY "Z" HAS BEEN SET TO "C6"</div>
+      <div id="mesAPC0">KEY "Z" HAS BEEN SET TO "C0"<br>KEY "Q" HAS BEEN SET TO "C1"</div>
+      <div id="mesAPC1">KEY "Z" HAS BEEN SET TO "C1"<br>KEY "Q" HAS BEEN SET TO "C2"</div>
+      <div id="mesAPC2">KEY "Z" HAS BEEN SET TO "C2"<br>KEY "Q" HAS BEEN SET TO "C3"</div>
+      <div id="mesAPC3">KEY "Z" HAS BEEN SET TO "C3"<br>KEY "Q" HAS BEEN SET TO "C4"</div>
+      <div id="mesAPC4">KEY "Z" HAS BEEN SET TO "C4"<br>KEY "Q" HAS BEEN SET TO "C5"</div>
+      <div id="mesAPC5">KEY "Z" HAS BEEN SET TO "C5"<br>KEY "Q" HAS BEEN SET TO "C6"</div>
+    </div>
+    <div id="help">PRESS "⌘"(OR "Ctrl") FOR HELP</div>
+    <div id="helpMenu">
+      <h1>DEFAULT SETTINGS</h1>
+      <h2>DRUMS AND PIANO MODE</h2>
+      <h3>DRUMS</h3>
+      <p>Q:KICK W:SNARE E:HHF R:HHC T:HHO Y:CRASH1 U:CRASH3 I:TOM1 O:TOM2 P:CYMBALFX [:FX2 1:CROSSSTICK 2:SNAREOPEN 3:SNAREGHOST 4:COWBELL 5:CRASH2 6:RIDEBELL 7:RIDEEDGE 8:SNAP 9:CLAP 0:SFX F1-F6:KICK F7-F12:SNARE<br>OR, CLICK THE PADS</p>
+      <h3>PIANO</h3>
+      <p>Z:C2 S:C#2 X:D2 D:D#2 C:E2 V:F2 G:F#2 B:G2 H:G#2 N:A2 J:A#2 M:B2 ,:C3 L:C#3 .:D3 ;:D#3 /:E3</p>
+      <h1>OCTAVE CHANGE</h1>
+      <p>→:RAISE AN OCTAVE ←:DROP AN OCTAVE<br>PIANO HAS PITCH FROM C0 TO C7<br>BASS HAS PITCH FROM C1 TO E4</p>
+      <h1>MODE CHANGE</h1>
+      <h2>↓:DRUMS AND BASS MODE</h2>
+      <h3>BASS</h3>
+      <p>Z:C1 S:C#1 X:D1 D:D#1 C:E1 V:F1 G:F#1 B:G1 H:G#1 N:A1 J:A#1 M:B1 ,:C2 L:C#2 .:D2 ;:D#2 /:E2</p>
+      <h2>↑:DRUMS AND PIANO MODE<br>SPACE:ALL PIANO MODE</h2>
+      <p>ALL ALPHABET AND NUMBER KEYS ARE SET AS PIANO<br>LINE "QWERTY" IS SET 1 OCTAVE HIGHER THAN LINE "ZXCVBN"<br>PRESS "SPACE" AGAIN TO QUIT THIS MODE</p>
+      <h1>OTHER FUNCTIONS</h1>
+      <p>⌥ (OR "Alt"):HIDE MESSAGES (PRESS AGAIN TO SHOW)  ⌘ (OR "Ctrl"):SHOW HELPMENU (PRESS AGAIN TO HIDE)</p>
+    </div>
+    <div class="blur"></div>
+  </body>
+</html>

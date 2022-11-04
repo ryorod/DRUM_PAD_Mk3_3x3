@@ -1,0 +1,31 @@
+//jQueryでアニメーションを付与（ライブラリはhttps://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js）
+$(function(){
+  //''内でアニメーションを付与するidを指定し、fadeIn,slideDown,hideなどのアニメーションを指定、()内でその時間を指定する
+  //"Produced by Ryogo Ishino"が表示され、フェードアウトする
+  $('#introduction').fadeIn(2000).fadeOut(3000);
+  //クリックボタンが表示される
+  $('#click').fadeIn(8000);
+  $('#proposal').fadeIn(8000);
+  //クリックボタンを押すと、
+  $('#click').click(function(){
+    //#introductionが消える
+    $('#introduction').hide();
+    //クリックボタンが消える
+    $('#click').hide();
+    $('#proposal').hide();
+    //タイトルが表示される
+    $('#title').slideDown(2000);
+    //パッドが表示される
+    $('#pad1').fadeIn(6000);
+    $('#pad2').fadeIn(6000);
+    $('#pad3').fadeIn(6000);
+    $('#pad4').fadeIn(6000);
+    $('#pad5').fadeIn(6000);
+    $('#pad6').fadeIn(6000);
+    $('#pad7').fadeIn(6000);
+    $('#pad8').fadeIn(6000);
+    $('#pad9').fadeIn(6000);
+    //スタートボタンが表示される
+    $('#start').slideDown(6000);
+  });
+});

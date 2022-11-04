@@ -1,0 +1,221 @@
+body {
+  background-color: black;
+}
+
+#load {
+  color: white;
+  font-family: 'courier new';
+  font-size: 20px;
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  bottom: 0px;
+  margin: auto;
+  width: 900px;
+  height: 10px;
+  display: none;
+}
+
+#pad1 {
+  background-color: #ff0000;
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  right: 550px;
+  bottom: 410px;
+  display: none;
+}
+
+#pad2 {
+  background-color: #ffa500;
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  right: 350px;
+  bottom: 410px;
+  display: none;
+}
+
+#pad3 {
+  background-color: #ffff00;
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  right: 150px;
+  bottom: 410px;
+  display: none;
+}
+
+#pad4 {
+  background-color: #008000;
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  right: 550px;
+  bottom: 210px;
+  display: none;
+}
+
+#pad5 {
+  background-color: #0000ff;
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  right: 350px;
+  bottom: 210px;
+  display: none;
+}
+
+#pad6 {
+  background-color: #4b0082;
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  right: 150px;
+  bottom: 210px;
+  display: none;
+}
+
+#pad7 {
+  background-color: #ee82ee;
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  right: 550px;
+  bottom: 10px;
+  display: none;
+}
+
+#pad8 {
+  background-color: #a52a2a;
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  right: 350px;
+  bottom: 10px;
+  display: none;
+}
+
+#pad9 {
+  background-color: #c0c0c0;
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  right: 150px;
+  bottom: 10px;
+  display: none;
+}
+
+#rearrange {
+  background-color: black;
+  color: white;
+  font-family: sans-serif;
+  font-size: 30px;
+  position: absolute;
+  left: 165px;
+  bottom: 282px;
+  display: none;
+}
+
+#blackout {
+  color: white;
+  font-family: 'courier new';
+  font-size: 30px;
+  position: absolute;
+  left: 165px;
+  bottom: 400px;
+  display: none;
+}
+
+#message {
+  color: white;
+  font-family: 'courier new';
+  font-size: 30px;
+  position: absolute;
+  left: 65px;
+  bottom: 400px;
+  display: none;
+}
+
+#bass {
+  color: white;
+  font-family: 'courier new';
+  font-size: 30px;
+  position: absolute;
+  left: 65px;
+  bottom: 400px;
+  display: none;
+}
+
+#allPiano {
+  color: white;
+  font-family: 'courier new';
+  font-size: 30px;
+  position: absolute;
+  left: 120px;
+  bottom: 400px;
+  display: none;
+}
+
+#default {
+  color: white;
+  font-family: 'courier new';
+  font-size: 30px;
+  position: absolute;
+  left: 65px;
+  bottom: 400px;
+  display: none;
+}
+
+[id^="mesC"] {
+  color: white;
+  font-family: 'courier new';
+  font-size: 30px;
+  position: absolute;
+  left: 15px;
+  bottom: 400px;
+  display: none;
+}
+
+[id^="mesAPC"] {
+  color: white;
+  font-family: 'courier new';
+  font-size: 30px;
+  position: absolute;
+  left: 15px;
+  bottom: 400px;
+  display: none;
+}
+
+#help {
+  color: white;
+  font-family: 'courier new';
+  font-size: 10px;
+  position: absolute;
+  left: 5px;
+  bottom: 3px;
+  display: none;
+}
+
+#helpMenu {
+  color: white;
+  font-family: 'courier new';
+  display: none;
+}
+
+.blur {
+  opacity: 0.3;
+  filter: blur(8px);
+}
+
+/*#rec {
+  border-radius: 50%;
+  height: 60px;
+  width: 60px;
+  background-color: red;
+  position: absolute;
+  top: 10px;
+  right:10px;
+  display: none;
+}*/
